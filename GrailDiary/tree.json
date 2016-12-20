@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Arbol Del Tule",
+        "country": "Mexico",
+        "treefamily": "cypress",
+        "age": "1200-1300 years old"
+    },
+    {
+        "name": "Cotton Tree",
+        "country": "Africa",
+        "treefamily": "cotton",
+        "age": "500 years old"
+    },
+    {
+        "name": "Boab Prison Tree",
+        "country": "Australia",
+        "treefamily": "boab",
+        "age": "1500 years old"
+    },
+    {
+        "name": "Major Oak",
+        "country": "England",
+        "treefamily": "oak",
+        "age": "800-1000 years old"
+    },
+    {
+        "name": "Lone Cypress",
+        "country": "United States",
+        "treefamily": "cypress",
+        "age": "250 years old"
+    },
+    {
+        "name": "Tree of Life",
+        "country": "Bahrain",
+        "treefamily": "mesquite",
+        "age": "400-500 years old"
+    },
+    {
+        "name": "Socotra Dragon Tree",
+        "country": "Yemen",
+        "treefamily": "dragon blood",
+        "age": "20 million years old"
+    },
+    {
+        "name": "German Sherman",
+        "country": "United States",
+        "treefamily": "giant sequoia",
+        "age": "2300-2700 years old"
+    },
+    {
+        "name": "Cedars of God",
+        "country": "Lebanon",
+        "treefamily": "cedar",
+        "age": "unknown"
+    },
+    {
+        "name": "Avenue of the Baobabs",
+        "country": "Madagascar",
+        "treefamily": "baobab",
+        "age": "800 years old"
+    }
+]
