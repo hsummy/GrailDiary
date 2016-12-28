@@ -22,18 +22,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4Y-lh-g4F" id="Yx1-B1-9KC">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tree Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I26-5v-039">
-                                            <rect key="frame" x="15" y="12" width="83.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="11" width="84" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Country" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhA-87-zk4">
-                                            <rect key="frame" x="278.5" y="12" width="61.5" height="20.5"/>
+                                            <rect key="frame" x="278" y="11" width="62" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cZ6-9O-SYl" kind="show" id="294-6c-Nym"/>
+                                    <segue destination="cZ6-9O-SYl" kind="show" identifier="TreeDetailsSegue" id="ruw-6c-gJc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -51,7 +51,7 @@
                             <outlet property="delegate" destination="KeP-tR-06p" id="y3z-ev-2p1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hqA-us-v4K"/>
+                    <navigationItem key="navigationItem" title="Famous Trees" id="hqA-us-v4K"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wh6-bY-eKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,14 +94,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="age" destination="wyB-0D-i4i" id="Ei0-rI-ZKj"/>
-                        <outlet property="name" destination="G2M-3C-BpN" id="00S-pb-8g1"/>
-                        <outlet property="treeFamily" destination="cJk-m2-bQ4" id="L7z-17-a28"/>
+                        <outlet property="age" destination="wyB-0D-i4i" id="EAx-Jc-Bkk"/>
+                        <outlet property="name" destination="G2M-3C-BpN" id="n49-dS-dv7"/>
+                        <outlet property="treeFamily" destination="cJk-m2-bQ4" id="cfp-If-sIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgB-i3-77s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1172" y="93"/>
+            <point key="canvasLocation" x="1354" y="100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e2s-3c-bd3">

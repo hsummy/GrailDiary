@@ -11,11 +11,12 @@ import UIKit
 class TreeDetailsViewController: UIViewController
 {
     
-//    @IBOutlet weak var name: UILabel!
-//    @IBOutlet weak var treeFamily: UILabel!
-//    @IBOutlet weak var age: UILabel!
-//    
-//    
+
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var treeFamily: UILabel!
+    @IBOutlet weak var age: UILabel!
+    
+//
 //    let nameLabel: String!
 //    let treefamilyLabel: String!
 //    let ageLabel: String!
