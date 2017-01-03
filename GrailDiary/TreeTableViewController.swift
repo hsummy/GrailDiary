@@ -8,13 +8,15 @@
 
 import UIKit
 
+//when making variables global (outside of class)... I could put it within the class, if using Core Data, collect data from internet. Try to minimize global variable since it takes a lot of memory for the system to access the variables all the time. If need to access the variable with other ViewControllers, then make them global.
+
+
+
 
 class TreeTableViewController: UITableViewController
 
 {
     var trees = [Tree]()
-    var textLabel: UILabel!
-    var detailTextLabel: UILabel?
 
     override func viewDidLoad()
     {
@@ -22,42 +24,8 @@ class TreeTableViewController: UITableViewController
         
         loadTrees()
         
-        
-//        var json: Array!
-//        do {
-//            json = try NSJSONSerialization.JSONObjectWithData(JSONData, options: NSJSONReadingOptions()) as? Array
-//        } catch {
-//            print(error)
-//        }
-//        
-//        if let item = json[0] as? [String: AnyObject] {
-//            if let person = item["person"] as? [String: AnyObject] {
-//                if let age = person["age"] as? Int {
-//                    print("Dani's age is \(age)")
-//                }
-//            }
-//        }
-        
-        
-        
-        
-        
- //       let
-//        do {
-//            let allContacts = try JSONSerialization.jsonObject(with: allContactsData, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
-//            if let arrJSON = allContacts["contacts"] {
-//                for index in 0...arrJSON.count-1 {
-//                    let aObject = arrJSON[index] as! [String : AnyObject]
-//                    names.append(aObject["name"] as! String)
-//                    contacts.append(aObject["email"] as! String)
-//                }
-//            }
-//            self.tableView.reloadData()
-//        }
-//        catch {
-//        }
-    //}
     
+        //h-only use below two lines of code if I was inserting a TableView within a ViewController
 //        tableView.dataSource = self
 //        tableView.delegate = self
     
@@ -66,12 +34,11 @@ class TreeTableViewController: UITableViewController
             // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         
     }
-    
+  //function for loading 'Trees' JSON File into a Dictionary.
     func loadTrees()
     {
         do
@@ -128,52 +95,48 @@ class TreeTableViewController: UITableViewController
 
     
     // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
          //Return false if you do not want the specified item to be editable.
         return true
     }
 
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
+    
+     //Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == .delete
+        {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+        else if editingStyle == .insert
+        {
+             //Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-//    {
-//        // Get the new view controller using segue.destinationViewController.
-////        // Pass the selected object to the new view controller.
-////     
-////            let destVC = segue.destination as? TreeDetailsViewController
-////            destVC?.delegate = self
+    //H- do not need segue code below since only using one ViewController and using Indicator (Triggered Segue).
 //
-    //}
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+//    {
+//        performSegue(withIdentifier: "TreeDetailsSegue", sender: nil)
+//    }
+    
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }//end of class

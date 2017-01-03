@@ -10,16 +10,17 @@ import UIKit
 
 class TreeDetailsViewController: UIViewController
 {
+    var trees = [Tree]()
+//var tree: Tree?
+    var name = " "
+    var treefamily = " "
+    var age = " "
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var treefamilyLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     
 
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var treeFamily: UILabel!
-    @IBOutlet weak var age: UILabel!
-    
-//
-//    let nameLabel: String!
-//    let treefamilyLabel: String!
-//    let ageLabel: String!
     
     override func viewDidLoad()
     {
@@ -27,28 +28,42 @@ class TreeDetailsViewController: UIViewController
         
 
         
+//        if Tree = trees
+//        {
+//        let name = String()
+//        let treefamily = String()
+//        let age = String()
+//        }
+        
+        
+        // self thingings if let myisland = islanddetails
+        //self.name = name
+        //    let treefamilyLabel: String!
+        //    let ageLabel =
+        
+        //self.imageView?.image = UIImage(named: "cotton-tree")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        
+    }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
         }
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
     
     

@@ -22,18 +22,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R4Y-lh-g4F" id="Yx1-B1-9KC">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tree Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I26-5v-039">
-                                            <rect key="frame" x="15" y="11" width="84" height="21"/>
+                                            <rect key="frame" x="15" y="12" width="83.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Country" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhA-87-zk4">
-                                            <rect key="frame" x="278" y="11" width="62" height="21"/>
+                                            <rect key="frame" x="278.5" y="12" width="61.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wh6-bY-eKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="101"/>
+            <point key="canvasLocation" x="594" y="99"/>
         </scene>
         <!--Tree Details-->
         <scene sceneID="3zq-5K-jbm">
@@ -94,9 +94,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="age" destination="wyB-0D-i4i" id="EAx-Jc-Bkk"/>
-                        <outlet property="name" destination="G2M-3C-BpN" id="n49-dS-dv7"/>
-                        <outlet property="treeFamily" destination="cJk-m2-bQ4" id="cfp-If-sIu"/>
+                        <outlet property="ageLabel" destination="wyB-0D-i4i" id="2DI-W7-cCG"/>
+                        <outlet property="nameLabel" destination="G2M-3C-BpN" id="7BP-Pc-FpI"/>
+                        <outlet property="treefamilyLabel" destination="cJk-m2-bQ4" id="dED-j6-f2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgB-i3-77s" userLabel="First Responder" sceneMemberID="firstResponder"/>
