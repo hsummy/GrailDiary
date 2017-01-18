@@ -16,7 +16,7 @@ import UIKit
 class TreeTableViewController: UITableViewController
 
 {
-    var trees = [Tree]()
+   var trees = [Tree]() 
 
     override func viewDidLoad()
     {
@@ -50,6 +50,7 @@ class TreeTableViewController: UITableViewController
                 if let possibleTrees = Tree.treeDictionariesFromArrayJSON(treesArray: treeData)
                 {
                     trees = possibleTrees
+                    print(treeData)
                 }
             }
         }
@@ -116,20 +117,45 @@ class TreeTableViewController: UITableViewController
              //Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    // MARK: - Navigation
-    //H- do not need segue code below since only using one ViewController and using Indicator (Triggered Segue).
-//
+    
+// MARK: - Navigation
+//H- do not need 'perform segue' code below since only using auto segue in Storyboard (Triggered Segue)!!!!!!!! BUT I DO NEED PREPARE SEGUE CODE, since i used an auto segue in storyboard.
+
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 //    {
-//        performSegue(withIdentifier: "TreeDetailsSegue", sender: nil)
+//        
+//        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+//        {
+//            //if segue.identifier == "TreeDetailsSegue"
+//            //{
+//                    let destination = segue.destination as! TreeDetailsViewController
+//                    let aTree = trees[indexPath.row]
+//                    destination.nameLabel.text = aTree.name
+//                    destination.treefamilyLabel.text = aTree.treefamily
+//                    destination.ageLabel.text = aTree.age
+//            
+//            //}//prepare(withIdentifier: "TreeDetailsSegue", sender: nil)
+//        }
+//        print(Tree.self)
 //    }
     
-
-
-    
-    
-    
-    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+        {
+            if segue.identifier == "TreeDetailsSegue"
+            {
+                if let indexPath = self.tableView.indexPathForSelectedRow
+                {
+                    let destinationVC = segue.destination as! TreeDetailsViewController
+                    let aTree = trees[indexPath.row]
+                    destinationVC.tree = aTree
+                    
+                    //DO NOT NEED TO BREAK DOWN EACH ITEM AND SEND...JUST PASS 'TREE'
+//                    destinationVC.treefamilyLabel.text = aTree.treefamily
+//                    destinationVC.ageLabel.text = aTree.age
+                }
+                print(Tree.self)
+            }
+        }
     
     
     

@@ -10,11 +10,11 @@ import UIKit
 
 class TreeDetailsViewController: UIViewController
 {
-    var trees = [Tree]()
-//var tree: Tree?
-    var name = " "
-    var treefamily = " "
-    var age = " "
+    
+    var tree: Tree?
+//    var name2 = ""
+    //    var treefamily = ""
+//    var age = ""
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var treefamilyLabel: UILabel!
@@ -26,9 +26,18 @@ class TreeDetailsViewController: UIViewController
     {
         super.viewDidLoad()
         
-
+//        nameLabel.text = name2
         
-//        if Tree = trees
+        if let tree = tree
+        {
+        nameLabel.text = tree.name
+        treefamilyLabel.text = tree.treefamily
+        ageLabel.text = tree.age
+        }
+        //self.treefamilyLabel = treefamily
+       // self.ageLabel = age
+        
+//        if trees = Tree
 //        {
 //        let name = String()
 //        let treefamily = String()
